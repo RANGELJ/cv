@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <title>Rangel Peralta Jorge Luis</title>
+</head>
+<style>
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mainWrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 5vw 5fr 5vw;
+    grid-template-rows: 1fr 20fr 1fr;
+    background-color: #fafafa;
+}
+
+.withShadow {
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+
+.page {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 25px 140px 10px 1fr 25px;
+    grid-template-rows: 25px 140px 10px 150px 10px 4fr 25px;
+}
+
+.header {
+    background-color: #E8EAF6;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 4;
+}
+
+.profilePicture {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    width: 100%;
+    height: 100%;
+    border-radius: 28px;
+}
+
+.baseInfo {
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+.abautMe {
+    grid-column-start: 2;
+    grid-column-end: -2;
+    grid-row-start: 4;
+    text-align: justify;
+}
+
+.emailsLabel {
+    font-size: 13px;
+}
+
+.experienceContainer {
+    grid-column-start: 2;
+    grid-column-end: -2;
+    grid-row-start: 6;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.contributionYear {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contributionPharagraph {
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.experienceColumn {
+    width: 50%;
+    height: 100%;
+}
+</style>
+<body>
+    <div class="mainWrapper">
+        <div class="page withShadow">
+            <img src="https://avatars.githubusercontent.com/u/28810595?v=4" alt="Profile picture" class="profilePicture withShadow" />
+            <div class="baseInfo">
+                <h1>Rangel Peralta Jorge Luis</h1>
+                <h3>CTO at Apphive</h3>
+                <p class="emailsLabel">Personal email: georgeranpe@gmail.com, work: jorge@apphive.io</p>
+            </div>
+            <div class="header"></div>
+            <div class="abautMe">
+                <h2>About me</h2>
+                <p>I am a software developer and problem solver, with five years of experience in the industry and with a vast portfolio of knowledge and skills from front end development to compiler and interpreters design with devops in the middle!</p>
+            </div>
+            <div class="experienceContainer">
+                <div class="experienceColumn">
+                    <h2>Apphive experience</h2>
+                    <h3 class="contributionYear">2023</h3>
+                    <p class="contributionPharagraph">Overhaul payments system, including a rewrite of our server to better communicate with our providers including stripe, support for 3D secure payments and complete logs in our relational database for reporting metrics.</p>
+                    <h3 class="contributionYear">2022</h3>
+                    <p class="contributionPharagraph">Define the workflow for all other non technical areas in Apphive so they use the same management system and agree in how to communicate and write down each task, with a focus on simple to follow rules and automation when possible.</p>
+                    <p class="contributionPharagraph">Update of our graphql server to have auto generated Typesript types so our developers do not have to write them themselves, also auto generations of front end code to call our server and better performance in general.</p>
+                    <h3 class="contributionYear">2021</h3>
+                    <p class="contributionPharagraph">Improve performance in our instance launcher that uses AWS services to create virtual machines on demand when our clients require compute power inside our product, the improvements include cheaper instances and better use of the time of sayed instances so the cost were drastically reduced.</p>
+                </div>
+                <div class="experienceColumn">
+                    <h3 class="contributionYear">2020</h3>
+                    <p class="contributionPharagraph">Design and implementation of our ios server to compile our client applications on demand configuring almost all of the requirements from the ios platform without human intervention.</p>
+                    <h3 class="contributionYear">2019</h3>
+                    <p class="contributionPharagraph">Migration from firebase based server to graphql and sql running in node, also dev ops to test and deploy to AWS of our main server and database, this means a lot of improvements in how we report and show information, also a lot of cost reductions.</p>
+                    <h3 class="contributionYear">2018</h3>
+                    <p class="contributionPharagraph">Design and implementation of the rendering system to run Apphive application that is platform agnostic</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
